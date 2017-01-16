@@ -47,14 +47,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/r_btnRegister"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:backgroundTint="@android:color/holo_blue_light" />
 
             <Button
                 android:text="CANCEL"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/r_btnCancel"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                android:backgroundTint="@android:color/holo_red_light" />
         </LinearLayout>
 
     </LinearLayout>
