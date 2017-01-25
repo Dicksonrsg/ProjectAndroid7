@@ -35,5 +35,11 @@
             android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
             android:textSize="16sp"
             android:textStyle="normal|bold" />
+
+        <Button
+            android:text="Availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hs_btn_ava" />
     </LinearLayout>
 </RelativeLayout>

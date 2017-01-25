@@ -11,7 +11,7 @@ import model.Teacher;
 
 public class TeacherDAO {
 
-    private final String SERVIDOR = "http://192.168.0.10:8080/PAndroidWS/resources/teacher"; /*ADD SERVER LOCATION OR THE IP OF MACHINE YOU'RE WORKING ON for example here i used 10.2.2.68*/
+    private final String SERVIDOR = "http://www2.pm.rn.gov.br:8080/PAndroidWS/resources/teacher"; /*ADD SERVER LOCATION OR THE IP OF MACHINE YOU'RE WORKING ON for example here i used 10.2.2.68*/
     private final WSAccess WEBSERVICE = new WSAccess();
     private final String REGISTER = SERVIDOR + "/register/";
     private final String EDIT = SERVIDOR + "/edit/";
@@ -62,7 +62,7 @@ public class TeacherDAO {
 
     public boolean delete(int id){
         try{
-            return WEBSERVICE.httpDelete(DELETE, String.valueOf(id));
+            return WEBSERVICE.httpDelete(DELETE + String.valueOf(id));
         }catch(Exception e){e.printStackTrace();}
         return false;
     }

@@ -13,7 +13,7 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
 
         if(count > 0) {
             Toast.makeText(parent.getContext(),
-                    "Language Selected: " + parent.getItemAtPosition(position).toString(),
+                    "Selected: " + parent.getItemAtPosition(position).toString(),
                     Toast.LENGTH_SHORT).show();
         }
         count ++;
