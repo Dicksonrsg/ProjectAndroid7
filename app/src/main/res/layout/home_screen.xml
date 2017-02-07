@@ -16,6 +16,14 @@
         android:layout_height="match_parent"
         android:id="@+id/hs_llmain">
 
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/hs_tb01" />
+
         <Button
             android:text="Register"
             android:layout_width="match_parent"
@@ -36,10 +44,5 @@
             android:textSize="16sp"
             android:textStyle="normal|bold" />
 
-        <Button
-            android:text="Availability"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/hs_btn_ava" />
     </LinearLayout>
 </RelativeLayout>

@@ -13,4 +13,5 @@
         <item>French</item>
         <item>Choose a language</item>
     </string-array>
+    <string name="title_activity_lists_screens">lists_screens</string>
 </resources>

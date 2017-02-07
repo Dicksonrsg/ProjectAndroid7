@@ -54,9 +54,6 @@ public class AvaLiAdapter extends BaseAdapter{
         TextView tvName = (TextView) view.findViewById(R.id.tl_tvName);
         tvName.setText(teacher.getName());
 
-        TextView tvPhone = (TextView) view.findViewById(R.id.tl_tvPhone);
-        tvPhone.setText(teacher.getPhone());
-
         TextView tvLanguage = (TextView) view.findViewById(R.id.tl_tvLanguage);
         tvLanguage.setText(teacher.getLanguage());
 

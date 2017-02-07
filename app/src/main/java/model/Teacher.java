@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Teacher implements Serializable{
 
-    private int id;
+    private int id, rg;
     private String name;
     private String phone;
     private String language;
@@ -12,14 +12,16 @@ public class Teacher implements Serializable{
     public Teacher() {
     }
 
-    public Teacher(String name, String phone, String language) {
+    public Teacher(int rg, String name, String phone, String language) {
+        this.rg = rg;
         this.name = name;
         this.phone = phone;
         this.language = language;
     }
 
-    public Teacher(int id, String name, String phone, String language) {
+    public Teacher(int id, int rg, String name, String phone, String language) {
         this.id = id;
+        this.rg = rg;
         this.name = name;
         this.phone = phone;
         this.language = language;
@@ -31,6 +33,14 @@ public class Teacher implements Serializable{
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getRg() {
+        return rg;
+    }
+
+    public void setRg(int rg) {
+        this.rg = rg;
     }
 
     public String getName() {
@@ -64,22 +74,15 @@ public class Teacher implements Serializable{
 
         Teacher teacher = (Teacher) o;
 
-        return id == teacher.id;
+        if (id != teacher.id) return false;
+        return rg == teacher.rg;
 
     }
 
     @Override
     public int hashCode() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
-        return "Teacher{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", language='" + language + '\'' +
-                '}';
+        int result = id;
+        result = 31 * result + rg;
+        return result;
     }
 }

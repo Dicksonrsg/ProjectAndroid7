@@ -12,20 +12,12 @@
         android:textColor="@color/colorPrimaryDark" />
 
     <TextView
-        android:text="Phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tl_tvPhone"
-        android:contentDescription="@android:string/emptyPhoneNumber"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <TextView
         android:text="Language"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tl_tvLanguage"
+        android:contentDescription="@android:string/emptyPhoneNumber"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/holo_red_light" />
+        android:textColor="@android:color/holo_green_dark" />
 
 </LinearLayout>
